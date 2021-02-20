@@ -3,3 +3,50 @@ df=pd.read_csv('nazwa pliku.csv')
 
 wczyatnie pliku excela xlsx:
 df=pd.read_exel('nazwa pliku.xlsx')
+
+wyświetlenie samych nazw kolumn:
+df.columns
+
+pokazanie danych z jednej kolumny:
+df['Nazwa kolumny']
+
+wybranie i wyświetlenie wybranych kolumn z całego pliku csv który zawiera zbyt wiele kolumn:
+df[['Nazwa pierwszej kolumny','Nazwa drugiej kolumny']]
+
+wymiary zbioru danych:
+df.shape
+
+wybranie zakresu wierszy w pliku df- zakres od komórki do komórki. Zakres jest zamknięto otwarty czyli bez drugiej liczby. Jak jest dwukropek to ustala się wiersze:
+df.iloc[1:4]
+
+odwołanie się do konkretnej komórki (uwaga tu jest przecinek):
+df.iloc[3,4]
+
+Przeszukanie danej kolumny w celu znalezienia jakiejś wartości lub nazwy (szukanych elementów może być wiele):
+df.loc[df['nazwa kolumny']=='nazwa szukanego elemnentu']
+
+dane statystyczne danej tabeli:
+df.describe()
+
+sortowanie alfabetyczne dla danej kolumny:
+df.sort_values('nazwa kolumny')
+
+sortowanie od końca do początku dla danej kolumny, ascending z ang.rosnąco
+df.sort_values('nazwa kolumny', ascending=False)
+
+sortowanie dwiema kolumnami(najpierw segreguje pierwszą a później drugą względem pierwszej):
+df.sort_values(['nazwa kolumny','nazwa drugiej kolumny'], ascending=True)
+
+tworzenie nowej kolumny:
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Usuwanie kolumny:
+df.drop(columns=['nazwa kolumny'])
+
+zapis danych do pliku CSV:
+df.to_csv('plik testowy1.csv')
+
+Zapis danych do pliku excela:
+df.to_excel('plik testowy2.xlsx')
+
+
