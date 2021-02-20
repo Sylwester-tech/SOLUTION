@@ -25,6 +25,9 @@ df.iloc[3,4]
 Przeszukanie danej kolumny w celu znalezienia jakiejś wartości lub nazwy (szukanych elementów może być wiele):
 df.loc[df['nazwa kolumny']=='nazwa szukanego elemnentu']
 
+Przeszukiwanie tabeli z warunkiem logicznym-np. w jednej kolumnie ma być wartość i w drugiej kolumnie ma być wartość:
+df.loc[ (df['nazwa kolumny']=='nazwa szukanego elemnentu') and (df['nazwa drugiej kolumny']=='nazwa drugiego szukanego elemnentu')]
+
 dane statystyczne danej tabeli:
 df.describe()
 
@@ -49,4 +52,9 @@ df.to_csv('plik testowy1.csv', index=False)
 Zapis danych do pliku excela:
 df.to_excel('plik testowy2.xlsx', index=False)
 
+resetowanie indexu:
+df.reset_index()
+
+wielkość obszaru wykresu:
+plt.figure(figsize= (15, 4))
 
