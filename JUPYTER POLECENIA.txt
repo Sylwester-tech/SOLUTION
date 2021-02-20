@@ -44,9 +44,9 @@ Usuwanie kolumny:
 df.drop(columns=['nazwa kolumny'])
 
 zapis danych do pliku CSV:
-df.to_csv('plik testowy1.csv')
+df.to_csv('plik testowy1.csv', index=False)
 
 Zapis danych do pliku excela:
-df.to_excel('plik testowy2.xlsx')
+df.to_excel('plik testowy2.xlsx', index=False)
 
 
