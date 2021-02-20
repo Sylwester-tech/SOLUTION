@@ -1,0 +1,5 @@
+wczytanie pliku csv:
+df=pd.read_csv('nazwa pliku.csv')
+
+wczyatnie pliku excela xlsx:
+df=pd.read_exel('nazwa pliku.xlsx')
