@@ -43,14 +43,24 @@ df.sort_values(['nazwa kolumny','nazwa drugiej kolumny'], ascending=True)
 tworzenie nowej kolumny:
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-Usuwanie kolumny:
-df.drop(columns=['nazwa kolumny'])
+Usuwanie kolumny z tabeli:
+df.drop(columns=['nazwa kolumny','nazwa kolumny'])
+df.drop(['nazwa kolumny', 'nazwa kolumny'], axis=1)
+
+Usuwanie wierszy z tabeli:(usunięcie zerowego i pierwszego wiersza)
+df.drop([0, 1])
+
 
 zapis danych do pliku CSV:
 df.to_csv('plik testowy1.csv', index=False)
 
 Zapis danych do pliku excela:
 df.to_excel('plik testowy2.xlsx', index=False)
+
+Zamiana znaków przydatna przy filtrowaniu i oczyszczaniu danych:
+df=df.replace('znak do usunięcia' , liczba )
+na przykad: df=df.repace('NaN', 0.0)
+po wyczyszczeniu danych dobrze jest sobie je zapisać i wczytać plik z nowymi oczyszczonymi
 
 resetowanie indexu:
 df.reset_index()
