@@ -49,6 +49,9 @@ df.drop(['nazwa kolumny', 'nazwa kolumny'], axis=1)
 
 Usuwanie wierszy z tabeli:(usunięcie zerowego i pierwszego wiersza)
 df.drop([0, 1])
+df.drop(index='length', level=1)
+
+
 
 
 zapis danych do pliku CSV:
