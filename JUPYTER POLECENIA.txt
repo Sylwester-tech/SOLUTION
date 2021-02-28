@@ -41,7 +41,8 @@ sortowanie dwiema kolumnami(najpierw segreguje pierwszą a później drugą wzgl
 df.sort_values(['nazwa kolumny','nazwa drugiej kolumny'], ascending=True)
 
 tworzenie nowej kolumny:
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -spawdzić czy to poniżej to zadziała?
+df1 = pd.DataFrame(dummy_data1, columns = ['id', 'Feature1', 'Feature2'])
 
 Usuwanie kolumny z tabeli:
 df.drop(columns=['nazwa kolumny','nazwa kolumny'])
