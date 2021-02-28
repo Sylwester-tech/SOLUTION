@@ -16,6 +16,14 @@ df[['Nazwa pierwszej kolumny','Nazwa drugiej kolumny']]
 wymiary zbioru danych:
 df.shape
 
+sprawdzenie jakie typu są dane w tabeli
+nazwa tabeli.dtypes
+
+Scalenie trzech kolumn z datą w jedną kolumnę z datą:
+pd.to_datetime(df[['year', 'month', 'day']])
+
+
+
 wybranie zakresu wierszy w pliku df- zakres od komórki do komórki. Zakres jest zamknięto otwarty czyli bez drugiej liczby. Jak jest dwukropek to ustala się wiersze:
 df.iloc[1:4]
 
