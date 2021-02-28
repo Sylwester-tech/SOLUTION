@@ -21,7 +21,7 @@ nazwa tabeli.dtypes
 
 Scalenie trzech kolumn z datą w jedną kolumnę z datą:
 pd.to_datetime(df[['year', 'month', 'day']])
-
+nazwatablicy['nazwa kolmuny isniejącej lub nowej']=pd.to_datetime(nazwatablicy[['year', 'month', 'day']])
 
 
 wybranie zakresu wierszy w pliku df- zakres od komórki do komórki. Zakres jest zamknięto otwarty czyli bez drugiej liczby. Jak jest dwukropek to ustala się wiersze:
