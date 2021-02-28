@@ -55,7 +55,8 @@ Usuwanie wierszy z tabeli:(usunięcie zerowego i pierwszego wiersza)
 df.drop([0, 1])
 df.drop(index='length', level=1)
 
-
+konwersja danej kolumny o jakimś typie na kolumnę z danymi typu datetime[64] (rok miesiąc dzień)
+df['nazwa kolumny']=pd.to_datatime(df['nazwa kolumny'])
 
 
 zapis danych do pliku CSV:
