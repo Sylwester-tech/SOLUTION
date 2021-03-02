@@ -1,5 +1,7 @@
 wczytanie pliku csv:
 df=pd.read_csv('nazwa pliku.csv')
+przykład:
+df2018=pd.read_csv('Kopia pliku s_d_t_495_2018.csv', header=None, skiprows=0, names=head_name, encoding='ISO-8859–1')
 
 wczyatnie pliku excela xlsx:
 df=pd.read_exel('nazwa pliku.xlsx')
