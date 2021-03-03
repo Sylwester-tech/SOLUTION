@@ -1,0 +1,13 @@
+importowanie biblioteki do grafiki i wykresów:
+import matplotlib.pyplot as plt
+
+Wyświetlenie wykresu z dataFrame:
+nazwa_data_frame.plot(kind='line',x='year',y='sdpw',color='blue', figsize=(20,6))
+
+Podpiswanie osi X i Y:
+plt.xlabel('Years')
+plt.ylabel('Sdpw')
+
+Wywołanie wykresu:
+plt.show()
+
