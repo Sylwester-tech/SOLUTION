@@ -11,3 +11,17 @@ plt.ylabel('Sdpw')
 Wywołanie wykresu:
 plt.show()
 
+wykres z danych:
+x=[1,2,3,4]
+y=[1,2,3,4]
+plt.plot(x,y)
+plt.show()
+
+Dodanie tytułu wykresu:
+plt.title('tytuł wykresu')
+
+Dodanie legendy do wykresu:
+plt.legend(["to jest x", "to jest y"])
+
+
+subplot ??????????
