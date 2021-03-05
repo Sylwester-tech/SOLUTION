@@ -1,0 +1,6 @@
+import seaborn as sns
+
+
+sns.set_style()
+
+sns.relplot(x='nazwa kolumny dla x', y='nazwa kolumny dla y', col='rozpatrywana wartość', hue='cieniowanie danych' data='nazwa dataframe')
