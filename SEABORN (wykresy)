@@ -1,5 +1,38 @@
 import seaborn as sns
 
+Tworzenie wykresu rozkładu DISTRIBUTION PLOT (to jest wykres słupkowy)
+sns.distplot(df['nazwa kolumny'], kde=False)
+kde to jest wykres liniowy, argument kde może nie występować
+bins=25 to jest właściwość pasków 
+
+Tworzenie wykresu dwóch zmiennych:
+sns.jointplot(x='nazwa_kolumny', y='nazwa kolumny', data=df, kind='reg')
+kind='kde'
+kind='hex'
+
+Tworzenie wykresu liniowego splajnu:
+sns.kdeplot(df['nazwa kolumny'])
+
+Tworzenie wykresu słupkowego:
+sns.barplot(x='nazwa kolumny', y='nazwakolumny' data=df)
+
+Zbiór wykresów - zestawienie
+sns.pairplot(nazwa całej tabeli np df)
+
+sns.violinplot(x='',y='', data='df', hue='')
+
+Ustawienie stylu okna wykresu:
+sns.set_style('darkgrid')
+inny argument to 'white', 'whitegrid', 'dark', 'ticks'
+
+Zmiana rozmiaru okna wykresu
+plt.figure(figsize=(8,4))
+
+Zmiana wielkości czcionki na wykresie:
+sns.set_context('paper', font_scale=1.4)
+
+sns.boxplot(x='nazwa_kolumny', y='nazwa kolumny', data=df, hue='nazwa kolumny')
+
 
 sns.set_style()
 
